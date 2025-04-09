@@ -17,7 +17,8 @@ jobs:
   # 這個 workflow 只有一個 job，名稱為 "build"
   build:
     # 這個 job 會執行在作業系統為 ubuntu 的 runner
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     # 作為 Job 的一部分，Steps 會循序執行一連串的動作
     steps:
@@ -25,11 +26,15 @@ jobs:
       - uses: actions/checkout@v2
 
       # 在 Runner 上使用 shell 顯示出 Hello world
-      - name: Run a one-line script
-        run: echo Hello, world!
+      #- name: Run a one-line script
+      #  run: echo Hello, world!
 
       # 執行一組的指令
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      #- name: Run a multi-line script
+      #  run: |
+      #    echo Add other actions to build,
+      #    echo test, and deploy your project.
+
+      - name: 檢查 SCA 版本
+        run: sourceanalyzer -version
+
