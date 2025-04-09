@@ -1,13 +1,13 @@
 # workflow 名稱
-name: CI
+name: Fortify SCA scan
 
 # 什麼情況下觸發 workflow
 on:
   # 對於 main branch 建立 Branch 與 Pull Request 時觸發 workflow 
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  # push:
+  #  branches: [ main ]
+  # pull_request:
+  #  branches: [ main ]
 
   # 允許你從 Action 頁簽上手動執行 workflow
   workflow_dispatch:
