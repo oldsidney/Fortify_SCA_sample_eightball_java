@@ -39,4 +39,5 @@ jobs:
         run: sourceanalyzer -b EightBall -scan -debug-verbose -f EightBall.fpr 
 
       - name: 上傳至 SSC
+        # 將 SSC URL 與 TOKEN 放到 SECRETS
         run: fortifyclient -url ${{ secrets.SSC_URL }} -authtoken ${{ secrets.SSC_TOKEN }} uploadFPR -file EightBall.fpr -project eightball -version v1.0
