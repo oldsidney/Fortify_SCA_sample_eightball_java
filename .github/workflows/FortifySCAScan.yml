@@ -39,4 +39,4 @@ jobs:
         run: sourceanalyzer -b EightBall -scan -debug-verbose -f EightBall.fpr 
 
       - name: 上傳至 SSC
-        run: fortifyclient -url http://192.168.22.232:8080/ssc/ -authtoken a8cbc28b-bc07-4d26-b635-d14744c1fa99 uploadFPR -file EightBall.fpr -project eightball -version v1.0
+        run: fortifyclient -url http://192.168.22.232:8080/ssc/ -authtoken ${{ secrets.SSC_TOKEN }} uploadFPR -file EightBall.fpr -project eightball -version v1.0
