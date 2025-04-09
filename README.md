@@ -30,9 +30,9 @@ $ auditworkbench EightBall.fpr
 
 The output should contain vulnerabilities in the following categories:
 
-      Path Manipulation
-      Unreleased Resource: Streams
-      J2EE Bad Practices: Leftover Debug Code
+* Path Manipulation
+* Unreleased Resource: Streams
+* J2EE Bad Practices: Leftover Debug Code
 
 The Fortify analysis might detect other issues depending on the Rulepack version 
 used in the scan.
