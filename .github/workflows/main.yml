@@ -36,5 +36,5 @@ jobs:
         run: sourceanalyzer -b EightBall EightBall.java -debug-verbose -logfile trans_java_1_8.log -jdk 1.8
 
       - name: 執行 Scan
-        run: sourceanalyzer -b EightBall -scan -f EightBall.fpr
+        run: sourceanalyzer -b EightBall -scan -debug-verbose -f EightBall.fpr 
         
