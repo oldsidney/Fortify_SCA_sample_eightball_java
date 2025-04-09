@@ -33,7 +33,7 @@ jobs:
 
       - name: 執行 Translation
       #  run: sourceanalyzer -b EightBall EightBall.java -debug-verbose -logfile trans_java_13.log -jdk 13
-        run: sourceanalyzer -b EightBall EightBall.java -debug-verbose -logfile trans_java_1_8.log -jdk 1.8
+        run: sourceanalyzer -b EightBall EightBall.java -debug-verbose -logfile trans_java_1_8.log -jdk 21
 
       - name: 執行 Scan
         run: sourceanalyzer -b EightBall -scan -debug-verbose -f EightBall.fpr 
